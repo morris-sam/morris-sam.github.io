@@ -12,6 +12,7 @@ I would recommend reading through the entire documentation once before attemptin
 2. [Create the Website Repository](#step-2-create-a-website-repository)
 3. [Install and set up GitHub Desktop](#step-3-install-and-set-up-github-desktop)
 4. [Download, Install, and Test the Minimal Theme](#step-4-download-install-and-test-the-minimal-theme)
+5. [Basic Customization](#step-5-basic-customization)
 
 ## Step 1: Create a GitHub Account
 
@@ -74,3 +75,28 @@ The chart below describes the meaning of the symbols to the left of these words.
 | Green Check    | Your website is up, nothing's wrong                              |
 
 Once the icon is a green check, your website should be up and running! Visit `{your username}.github.io` to test it.
+
+## Step 5: Basic Customization
+
+#### Name, Title, and Image
+
+In the file labeled `_config.yml`, there are settings you can change that will alter the look of your website.
+
+**Name -** The setting labeled "title:" is where you can input your name, or whatever you want to have at the top of the page.
+
+**Title -** The setting labeled "description:" is where you can input a description of yourself, usually a title or brief description.
+
+**Image -** The setting labeled "logo:" is a path to where a profile picture of you is stored. By default, this is `/assets/img/logo.png`, but it can be changed based on your preferences.
+
+In your files, there will be a folder called "assets", and a folder within that called "img". If you choose to replace the image that is in this file, make sure to keep the name consistent between your config setting and the image (`logo.png` and `logo.png` by default).
+
+**Bonus -** The setting labeled "show_downloads:" can be set to `false`, as you usually won't have something for people viewing your site to immediately download.
+
+#### Contents on the right
+
+The basis of this section is stored in a file called `index.md`. This file uses the `.md` extension, which can use Markdown symbols for format editing. 
+
+A list of these can be found at [https://www.markdownguide.org/basic-syntax/], as well as some best practices when using Markdown.
+
+After making changes to this file, you can push it through GitHub Desktop onto GitHub, which pushes it live to your site after a couple of minutes.
+
