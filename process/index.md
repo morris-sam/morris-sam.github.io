@@ -23,8 +23,6 @@ Your username will be public, so ideally choose something that is relevant to yo
 
 Once you have an account, GitHub will open your main profile page, which can be accessed by visiting `https://github.com/{your username}`.
 
-<font size="1">[Back to Table of Contents](#table-of-contents)</font>
-
 ## Step 2: Create a Website Repository
 
 > Definition: "A repository is the most basic element of GitHub. It's a place where you can store your code, your files, and each file's revision history. Repositories can have multiple collaborators and can be either public or private." [Source](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)
@@ -59,9 +57,9 @@ Open up the cloned repository folder you made in the last step, and move the con
 
 Once this is done, go back to GitHub Desktop, and you'll now see that there are changed files. Make sure all the boxes in the list are checked.
 
-In the bottom left, next to your profile picture (by default this is a white background with a random pattern), enter a brief description of the changes you made (not in the description box, right above it).
+In the bottom left, in the section labeled "Summary", enter a brief description of the changes you made (not in the "Description" box, right above it).
 
-In the bottom left corner, click the button labeled "Commit {number} files to **main**". On the top right, there will now be a button to `Push to Origin`, which will update your main GitHub repository with the files you added locally.
+In the bottom left corner, click the button labeled "Commit {number} files to **main**". On the top right, the button that was labeled `Fetch origin` will now be labeled `Push origin`, which will update your main GitHub repository with the files you added locally.
 
 Back on `https://github.com/{your username}/{your username}.github.io`, you'll now see all the files you downloaded from the Minimal page.
 
