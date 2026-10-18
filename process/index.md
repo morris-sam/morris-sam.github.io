@@ -78,7 +78,7 @@ Once the icon is a green check, your website should be up and running! Visit `{y
 
 ## Step 5: Basic Customization
 
-#### Name, Title, and Image
+### Name, Title, and Image
 
 In the file labeled `_config.yml`, there are settings you can change that will alter the look of your website.
 
@@ -92,11 +92,11 @@ In your files, there will be a folder called "assets", and a folder within that 
 
 **Bonus -** The setting labeled "show_downloads:" can be set to `false`, as you usually won't have something for people viewing your site to immediately download.
 
-#### Contents on the right
+### Contents on the right
 
 The basis of this section is stored in a file called `index.md`. This file uses the `.md` extension, which can use Markdown symbols for format editing. 
 
-A list of these can be found at [https://www.markdownguide.org/basic-syntax/], as well as some best practices when using Markdown.
+A list of these can be found at <https://www.markdownguide.org/basic-syntax/>, as well as some best practices when using Markdown.
 
 After making changes to this file, you can push it through GitHub Desktop onto GitHub, which pushes it live to your site after a couple of minutes.
 
