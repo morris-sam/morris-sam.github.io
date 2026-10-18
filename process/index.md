@@ -59,15 +59,15 @@ Open up the cloned repository folder you made in the last step, and move the con
 
 Once this is done, go back to GitHub Desktop, and you'll now see that there are changed files. Make sure all the boxes in the list are checked.
 
-In the bottom left, in the section labeled "Summary", enter a brief description of the changes you made (not in the "Description" box, right above it).
+In the bottom left, in the section labeled `Summary`, enter a brief description of the changes you made (not in the big `Description` box, the smaller one right above it).
 
-In the bottom left corner, click the button labeled "Commit {number} files to **main**". This will execute a "commit", or change, to your repository.
+In the bottom left corner, click the button labeled `Commit {number} files to main`. This will execute a "commit", or change, to your repository.
 
 On the top right, the button that was labeled `Fetch origin` will now be labeled `Push origin`, which will update your main GitHub repository with the files from your commit.
 
 Back on `https://github.com/{your username}/{your username}.github.io`, you'll now see all the files you downloaded from the Minimal page.
 
-In the `Actions` tab of your repository, there will be a workflow called "pages build and deployment".
+In the `Actions` tab of your repository, there will be a workflow called `pages build and deployment`.
 
 The chart below describes the meaning of the symbols to the left of these words.
 
@@ -85,21 +85,21 @@ Once the icon is a green check, your website should be up and running! Visit `{y
 
 In the file labeled `_config.yml`, there are settings you can change that will alter the look of your website.
 
-**Name -** The setting labeled "title:" is where you can input your name, or whatever you want to have at the top of the page.
+**Name -** The setting labeled `title` is where you can input your name, or whatever you want to have at the top of the page.
 
-**Title -** The setting labeled "description:" is where you can input a description of yourself, usually a title or brief description.
+**Title -** The setting labeled `description` is where you can input a description of yourself, usually a title or brief description.
 
-**Image -** The setting labeled "logo:" is a path to where a profile picture of you is stored. By default, this is `/assets/img/logo.png`, but it can be changed based on your preferences.
+**Image -** The setting labeled `logo` is a path to where a profile picture of you is stored. By default, this is `/assets/img/logo.png`, but it can be changed based on your preferences.
 
-In your files, there will be a folder called "assets", and a folder within that called "img". If you choose to replace the image that is in this file, make sure to keep the name consistent between your config setting and the image (`logo.png` and `logo.png` by default).
+In your files, there will be a folder called `assets`, and a folder within that called `img`. If you choose to replace the image that is in this file, make sure to keep the name consistent between your config setting and the image (`logo.png` and `logo.png` by default).
 
-**Bonus -** The setting labeled "show_downloads:" can be set to `false`, as you usually won't have something for people viewing your site to immediately download.
+**Bonus -** The setting labeled `show_downloads` can be set to `false`, as you usually won't have something for people viewing your site to immediately download.
 
 ### Contents on the right
 
-The basis of this section is stored in a file called `index.md`. This file uses the `.md` extension, which can use Markdown symbols for format editing.
+The basis of this section is stored in a file called `index.md`. This file uses the `.md` extension, which means the file is read in Markdown format.
 
-A list of these can be found at [https://www.markdownguide.org/basic-syntax/](https://www.markdownguide.org/basic-syntax/), as well as some best practices when using Markdown.
+A list of Markdown formatting symbols and best practices can be found at [https://www.markdownguide.org/basic-syntax/](https://www.markdownguide.org/basic-syntax/).
 
 After making changes to this file, you can push it through GitHub Desktop onto GitHub, which pushes it live to your site after a couple of minutes.
 
@@ -113,7 +113,7 @@ Due to personal preference, I changed a few of the settings and made some change
 
 One of the things GitHub does by default is it will attach your username and email address to any commits you make. As a personal issue, I don't want to have my email address available to anyone that looks at my commits.
 
-In your profile settings, go to `Access > Emails`, and enable "Keep my email addresses private" and "Block command line pushes that expose my email". These won't affect previous commits, only future ones.
+In your profile settings, go to `Access > Emails`, and enable `Keep my email addresses private` and `Block command line pushes that expose my email`. These won't affect previous commits, only future ones.
 
 #### Authentication Settings
 
@@ -141,14 +141,11 @@ Finish by clicking the green `Save changes` button in the bottom right corner.
 
 Some of what we imported from Minimal isn't necessary, and can be deleted in the repository.
 
-1. The `docs` folder.
-   The files within it are primarily used on the Minimal GitHub page, and aren't needed for our purposes.
-2. The `README` file.
-   Below your repository files, this is the text box that describes what the repository is. This is the default from Minimal, and isn't ideal if someone visits your repository.
+1. The `docs` folder. The files within it are primarily used on the Minimal GitHub page, and aren't needed for our purposes.
+2. The `README` file. Below your repository files, this is the text box that describes what the repository is. This is the default from Minimal, and isn't ideal if someone visits your repository.
    The `README.md` file contains the contents of this area, and can be altered just like the `index.md` file.
-3. Redundant code.
-   Minimal can change what's listed on the page depending on whether the account is a user or organization, but since this is always a user account, the "organization" options aren't needed.
-   In the `_layouts` folder, access the `default.html` file, and remove sections starting with `{% if site.github.is_project_page %}` and ending with `{% endif %}`.
-   Lines that say `{% if site.github.is_user_page %}` can also be removed, _as long as_ the corresponding `{% endif %}` is removed, and the lines in between are unchanged.
 
 <small>Last edited: October 17th, 2026</small>
+3. Redundant code. Minimal can change what's listed on the page depending on whether the account is a user or organization, but since this is always a user account, the "organization" options aren't needed.
+   In the `_layouts` folder, access the `default.html` file, and remove sections starting that contain `if site.github.is_project_page` and end with `endif`.
+   Lines that contain `if site.github.is_user_page` can also be removed, _as long as_ the corresponding `endif` is removed, and the lines in between are unchanged.
