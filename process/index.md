@@ -144,8 +144,6 @@ Some of what we imported from Minimal isn't necessary, and can be deleted in the
 1. The `docs` folder. The files within it are primarily used on the Minimal GitHub page, and aren't needed for our purposes.
 2. The `README` file. Below your repository files, this is the text box that describes what the repository is. This is the default from Minimal, and isn't ideal if someone visits your repository.
    The `README.md` file contains the contents of this area, and can be altered just like the `index.md` file.
-
-<small>Last edited: October 17th, 2026</small>
 3. Redundant code. Minimal can change what's listed on the page depending on whether the account is a user or organization, but since this is always a user account, the "organization" options aren't needed.
    In the `_layouts` folder, access the `default.html` file, and remove sections starting that contain `if site.github.is_project_page` and end with `endif`.
    Lines that contain `if site.github.is_user_page` can also be removed, _as long as_ the corresponding `endif` is removed, and the lines in between are unchanged.
