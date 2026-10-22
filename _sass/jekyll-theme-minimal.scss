@@ -73,7 +73,7 @@ code, pre {
 }
 
 pre {
-  padding:8px 15px;
+  padding:8px 10px;
   background: #f8f8f8;
   border-radius:5px;
   border:1px solid #e5e5e5;
@@ -119,7 +119,7 @@ kbd {
 }
 
 header {
-  width:300px;
+  width:310px;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -203,7 +203,7 @@ hr {
 }
 
 footer {
-  width:300px;
+  width:310px;
   float:left;
   position:fixed;
   bottom:50px;
@@ -265,7 +265,7 @@ footer {
 
 @media print, screen and (max-width: 480px) {
   body {
-    padding:15px;
+    padding:10px;
   }
 
   .downloads {
