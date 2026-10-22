@@ -11,9 +11,10 @@ I would recommend reading through the entire documentation once before attemptin
 1. [Create a GitHub account](#step-1-create-a-github-account)
 2. [Create the Website Repository](#step-2-create-a-website-repository)
 3. [Install and set up GitHub Desktop](#step-3-install-and-set-up-github-desktop)
-4. [Download, Install, and Test the Minimal Theme](#step-4-download-install-and-test-the-minimal-theme)
-5. [Basic Customization](#step-5-basic-customization)
-6. [My Personal Changes](#step-6-my-personal-changes)
+4. [Installing VSCode](#step-4-installing-vscode)
+5. [Download, Install, and Test the Minimal Theme](#step-5-download-install-and-test-the-minimal-theme)
+6. [Basic Customization](#step-6-basic-customization)
+7. [My Personal Changes](#step-7-my-personal-changes)
 
 ## Step 1: Create a GitHub Account
 
@@ -47,9 +48,17 @@ Click it, and choose to clone it to your computer, as well as where in your comp
 
 GitHub Desktop will now show you a list of your changed files on the left, and a message saying `No Local Changes` on the right.
 
-## Step 4: Download, Install, and Test the Minimal Theme
+## Step 4: Installing VSCode
 
-This website was not created on its own completely from scratch. It was created using a theme called "Minimal", which can be found [here](https://github.com/pages-themes/minimal).
+Your computer's default file editing software may be great, but if it's not, one is going to be needed.
+
+VSCode is a free software that allows for file editing, among other features. 
+
+It can be downloaded from [the VSCode website](https://code.visualstudio.com), and used in the following steps.
+
+## Step 5: Download, Install, and Test the Minimal Theme
+
+This website was not created on its own completely from scratch. It was created using a theme called "Minimal", which can be found [on the Minimal GitHub page](https://github.com/pages-themes/minimal).
 
 To use the "Minimal" theme, open their repository and look for a green button labeled `<> Code`.
 
@@ -79,7 +88,11 @@ The chart below describes the meaning of the symbols to the left of these words.
 
 Once the icon is a green check, your website should be up and running! Visit `{your username}.github.io` to test it.
 
-## Step 5: Basic Customization
+## Step 6: Basic Customization
+
+On GitHub Desktop, in `Settings > Integrations`, change the setting for `External Editor` to whatever you're using as your text editor.
+
+Navigate to `Repository > Open in {integration}`, and your website files will be opened in your selected editor.
 
 ### Name, Title, and Image
 
@@ -101,11 +114,19 @@ The basis of this section is stored in a file called `index.md`. This file uses 
 
 A list of Markdown formatting symbols and best practices can be found at [https://www.markdownguide.org/basic-syntax/](https://www.markdownguide.org/basic-syntax/).
 
-After making changes to this file, you can push it through GitHub Desktop onto GitHub, which pushes it live to your site after a couple of minutes.
+After making changes to this file and saving it to your computer, you'll see these changes on GitHub Desktop.
 
-## Step 6: My Personal Changes
+From here, you can push it nto GitHub, which pushes it live to your site after a couple of minutes.
+
+## Step 7: My Personal Changes
 
 Due to personal preference, I changed a few of the settings and made some changes to the underlying functionality of this repository. Feel free to do them also.
+
+### File Editing Software
+
+Instead of VSCode, I used [IntelliJ IDEA](https://www.jetbrains.com/idea/), which is a paid software used in software development.
+
+No steps are different between setting up VSCode or IntelliJ.
 
 ### Profile Settings
 
