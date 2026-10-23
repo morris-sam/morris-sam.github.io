@@ -174,7 +174,7 @@ To adjust the default layout and theme of the website to create something more c
    Sections that contain `if site.github.is_project_page` and end with `endif` can be removed, as they're not relevant for us. 
    Lines that contain `if site.github.is_user_page` can also be removed, _as long as_ the corresponding `endif` is removed, and the lines in between are unchanged.
    This should be lines 25-30, 32, and 48-50. 
-  2. **Added a link to this subpage.** Links can be nested in text, so I added a line that, when clicked, opens this subpage on the process. This uses the `site.github.owner_name` variable, allowing for crosses between accounts.
+  2. **Added a link to this subpage.** Links can be nested in text, so I added a line that, when clicked, opens this subpage on the process. This uses the `site.github.repository_name` variable, allowing for crosses between accounts.
   3. **Added a "last updated" indicator.** GitHub Pages has some variables built into it, such as the `site.github.is_project_page` used above. Three of them are used to make this line work, all obtained from the [Jekyll GitHub page](https://github.com/jekyll/github-metadata/blob/main/docs/site.github.md).
   - `site.time` This gets the current time (at least when the current version of the site was published), and formats it in [Strftime](https://strftime.net). In my `_config.yml` file, I added a variable for my `timezone` as `America/Los Angeles`, as it would default to GMT.
   - `site.github.repository_url` This gets the link to the repository the site is hosted from, involving no change in moving it from one account to another.
