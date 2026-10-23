@@ -165,6 +165,22 @@ Some of what we imported from Minimal isn't necessary, and can be deleted in the
 1. The `docs` folder. The files within it are primarily used on the Minimal GitHub page, and aren't needed for our purposes.
 2. The `README` file. Below your repository files, this is the text box that describes what the repository is. This is the default from Minimal, and isn't ideal if someone visits your repository.
    The `README.md` file contains the contents of this area, and can be altered just like the `index.md` file.
-3. Redundant code. Minimal can change what's listed on the page depending on whether the account is a user or organization, but since this is always a user account, the "organization" options aren't needed.
-   In the `_layouts` folder, access the `default.html` file, and remove sections starting that contain `if site.github.is_project_page` and end with `endif`.
+
+#### Formatting & QOL Changes
+
+To adjust the default layout and theme of the website to create something more customized, I adjusted two different files.
+- The `default.html` file, accessed through the `_layouts` folder. This contains instructions for the generic layout of the site, and I made three small changes.
+   1. *Removed unnecessary code.* Minimal can change what's listed on the page depending on whether the account is a user or organization, but since this is always a user account, the "organization" options aren't needed. 
+   Sections that contain `if site.github.is_project_page` and end with `endif` can be removed, as they're not relevant for us. 
    Lines that contain `if site.github.is_user_page` can also be removed, _as long as_ the corresponding `endif` is removed, and the lines in between are unchanged.
+   This should be lines 25-30, 32, and 48-50. 
+  2. *Added a link to this subpage.* Links can be nested in text, so I added a line that, when clicked, opens this subpage on the process.
+  3. *Added a "last updated" indicator.* GitHub Pages has some variables built into it, such as the `site.github.is_project_page` used above. Three of them are used to make this line work, all obtained from the [Jekyll GitHub page](https://github.com/jekyll/github-metadata/blob/main/docs/site.github.md).
+  - `site.time` This gets the current time (at least when the current version of the site was published), and formats it in [Strftime](https://strftime.net). In my `_config.yml` file, I added a variable for my `timezone` as `America/Los Angeles`, as it would default to GMT.
+  - `site.github.repository_url` This gets the link to the repository the site is hosted from, involving no change in moving it from one account to another. This was also used for linking this subpage.
+  - `site.github.build_revision` This returns a hash that corresponds to the current version of the repository. Using this will link to the changes made in the last commit.
+- The `jekyll-theme-minimal.scss` file, accessed through the `_sass` folder. This defines the general theme of the site, including measurements for how wide certain sections are. In this, I adjusted four measurements:
+  1. On line 76, I adjusted the `pre > padding` measurement from `8px 15px` to `8px 10px`.
+  2. On line 122, I adjusted the `header > width` measurement from `270px` to `310px`.
+  3. On line 206, I adjusted the `footer > width` measurement from `270px` to `310px`.
+  4. On line 268, I adjusted the `body > padding` measurement from `15px` to `10px`.
