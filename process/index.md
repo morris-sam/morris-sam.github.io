@@ -52,7 +52,7 @@ GitHub Desktop will now show you a list of your changed files on the left, and a
 
 Your computer's default file editing software may be great, but if it's not, one is going to be needed.
 
-VSCode is a free software that allows for file editing, among other features. 
+VSCode is a free software that allows for file editing, among other features.
 
 It can be downloaded from [the VSCode website](https://code.visualstudio.com), and used in the following steps.
 
@@ -184,3 +184,6 @@ To adjust the default layout and theme of the website to create something more c
   2. On line 122, I adjusted the `header > width` measurement from `270px` to `310px`.
   3. On line 206, I adjusted the `footer > width` measurement from `270px` to `310px`.
   4. On line 268, I adjusted the `body > padding` measurement from `15px` to `10px`.
+
+## Final Photo:
+![Portfolio](../assets/img/portfolio_photo.png)
