@@ -87,3 +87,9 @@ layout: default
 <dt>Crystal Ball</dt>
 <dd>Prescriptive Analytics</dd>
 </dl>
+
+* * *
+
+# Projects
+
+[Creating this webpage](/process)
