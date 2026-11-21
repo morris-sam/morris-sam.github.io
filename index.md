@@ -93,3 +93,4 @@ layout: default
 # Projects
 
 [Creating this webpage](/process)
+[OM 620 - Calculating inventory safety stock in Python](/safety_stock_calculation)
